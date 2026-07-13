@@ -26,6 +26,8 @@ body {
 header { 
     border-bottom: 3px solid var(--color-dark-olive);
     padding-bottom: 20px;
+    position: relative;
+    padding-top: 40px; 
 }
 
 h1, h2, h3 {
@@ -129,7 +131,7 @@ section.aktivni { display: block; }
 .ikony-dovednosti {
     display: flex;
     gap: 30px;
-    font-size: 3.5em; /* Velikost ikon */
+    font-size: 3.5em; 
     color: var(--color-dark-olive);
     flex-wrap: wrap;
     margin-top: 10px;
@@ -143,11 +145,6 @@ section.aktivni { display: block; }
 .ikony-dovednosti i:hover {
     transform: translateY(-5px);
     color: var(--color-medium-olive);
-}
-
-header { 
-    position: relative; 
-    padding-top: 40px; /* Prostor pro vlajky */
 }
 
 .prepinac-jazyku {
