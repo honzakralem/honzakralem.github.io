@@ -94,7 +94,6 @@ section.aktivni { display: block; }
 }
 .seznam-bez-odrazek li { margin-bottom: 10px; }
 
-/* Styly pro sekci Projekty */
 .grid-projekty {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -110,7 +109,7 @@ section.aktivni { display: block; }
 
 .projekt-karta:hover {
     transform: translateY(-3px);
-    background-color: #e0e8aa; /* Mírné zesvětlení při najetí */
+    background-color: #e0e8aa; 
 }
 
 .projekt-karta p { margin-top: 0; font-size: 0.95em; }
@@ -146,18 +145,25 @@ section.aktivni { display: block; }
     color: var(--color-medium-olive);
 }
 
-        .prepinac-jazyku {
-            position: absolute;
-            top: 5px;
-            right: 0;
-            display: flex;
-            gap: 15px;
-        }
-        .prepinac-jazyku a {
-            text-decoration: none;
-            font-size: 1.8em;
-            transition: transform 0.2s ease;
-        }
-        .prepinac-jazyku a:hover {
-            transform: scale(1.2);
-        }
+header { 
+    position: relative; 
+    padding-top: 40px; /* Prostor pro vlajky */
+}
+
+.prepinac-jazyku {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    display: flex; 
+    gap: 10px;
+}
+
+.prepinac-jazyku a {
+    text-decoration: none; 
+    font-size: 1.5em; 
+    transition: transform 0.2s ease;
+}
+
+.prepinac-jazyku a:hover { 
+    transform: scale(1.2); 
+}
