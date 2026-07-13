@@ -145,3 +145,19 @@ section.aktivni { display: block; }
     transform: translateY(-5px);
     color: var(--color-medium-olive);
 }
+
+        .prepinac-jazyku {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .prepinac-jazyku a {
+            text-decoration: none;
+            font-size: 1.8em;
+            transition: transform 0.2s ease;
+        }
+        .prepinac-jazyku a:hover {
+            transform: scale(1.2);
+        }

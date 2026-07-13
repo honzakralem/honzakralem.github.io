@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha Pham - Personal Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>
+        header { position: relative; }
+        .prepinac-jazyku {
+            position: absolute; top: 5px; right: 0; display: flex; gap: 15px;
+        }
+        .prepinac-jazyku a {
+            text-decoration: none; font-size: 1.8em; transition: transform 0.2s ease;
+        }
+        .prepinac-jazyku a:hover { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <header>
+            <div class="prepinac-jazyku">
+                <a href="index.html" title="Čeština">🇨🇿</a>
+                <a href="index-en.html" title="English">🇬🇧</a>
+                <a href="index-vn.html" title="Tiếng Việt">🇻🇳</a>
+            </div>
+            <h1>Ha Pham</h1>
+            <nav>
+                <a href="#" data-cil="o-mne">About Me</a>
+                <a href="#" data-cil="dovednosti">Skills</a>
+                <a href="#" data-cil="projekty">Projects</a>
+                <a href="#" data-cil="kontakt">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="o-mne" class="aktivni">
+                <h2>&gt; About Me</h2>
+                <div class="profil-rozlozeni">
+                    <img src="fotka.jpg" alt="Ha Pham" class="profil-fotka">
+                    <div class="profil-text">
+                        <p>I am a second-year student at the Faculty of Information Technology, BUT.</p>
+                        <p>I focus on low-level programming, and my favorite subject so far is Operating Systems.</p>
+                        <p>In my free time, I enjoy reading, working out, and spending time with my beloved girlfriend Nela.</p>
+                        <p>My GPA for the first year was 1.57 (ranked 59/646).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dovednosti">
+                <h2>&gt; Skills</h2>
+                <div class="ikony-dovednosti">
+                    <i class="devicon-c-plain" title="C"></i>
+                    <i class="devicon-linux-plain" title="Linux"></i>
+                    <i class="devicon-bash-plain" title="Bash"></i>
+                    <i class="devicon-git-plain" title="Git"></i>
+                    <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+            </section>
+
+            <section id="projekty">
+                <h2>&gt; Projects</h2>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark-olive);">&gt; 1st Semester</h3>
+                <div class="grid-projekty">
+                    <div class="projekt-karta">
+                        <h3>IZP: Text Processing</h3>
+                        <p>Navigation system – searching for addresses and filtering allowed keys on a virtual keyboard.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/izp-projekt" target="_blank">Source Code</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IZP: Cluster Analysis</h3>
+                        <p>Working with data structures and dynamic memory. Merging the nearest clusters of network flows.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/izp-projekt2" target="_blank">Source Code</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IEL: Circuit Analysis</h3>
+                        <p>Semester project focused on analyzing and solving electrical circuits.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/iel-projekt" target="_blank">Source Code</a>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 40px; color: var(--color-dark-olive);">&gt; 2nd Semester</h3>
+                <div class="grid-projekty">
+                    <div class="projekt-karta">
+                        <h3>IVS: Software Testing</h3>
+                        <p>Basics of testing, using blackbox, whitebox, and Test-Driven Development (TDD) methods.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ivs-projekt-1" target="_blank">Source Code</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IVS: Intercalculator</h3>
+                        <p>Practical aspects of software development. Team project to create a calculator with a GUI.</p>
+                        <a class="odkaz" href="https://github.com/SpookieGames/intercalculator" target="_blank">Source Code</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>INC: UART Design</h3>
+                        <p>Digital systems design. Creating a module that receives serial input and provides parallel output.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/inc-project" target="_blank">Source Code</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IOS: Bash Scripting</h3>
+                        <p>Creating a script to analyze web server logs, filter them, and generate statistics.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ios-projekt-1" target="_blank">Source Code</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IOS: Synchronization</h3>
+                        <p>Implementation of a synchronization problem.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ios_project_2" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontakt">
+                <h2>&gt; Contact</h2>
+                <ul class="seznam-bez-odrazek">
+                    <li>University Email: <a class="odkaz" href="mailto:xphamha00@stud.fit.vut.cz">xphamha00@stud.fit.vut.cz</a></li>
+                    <li>Personal Email: <a class="odkaz" href="mailto:hapham282794@gmail.com">hapham282794@gmail.com</a></li>
+                    <li>GitHub: <a class="odkaz" href="https://github.com/honzakralem" target="_blank">github.com/honzakralem</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

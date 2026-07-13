@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hà Phạm - Trang Cá Nhân</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>
+        header { position: relative; }
+        .prepinac-jazyku {
+            position: absolute; top: 5px; right: 0; display: flex; gap: 15px;
+        }
+        .prepinac-jazyku a {
+            text-decoration: none; font-size: 1.8em; transition: transform 0.2s ease;
+        }
+        .prepinac-jazyku a:hover { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <header>
+            <div class="prepinac-jazyku">
+                <a href="index.html" title="Čeština">🇨🇿</a>
+                <a href="index-en.html" title="English">🇬🇧</a>
+                <a href="index-vn.html" title="Tiếng Việt">🇻🇳</a>
+            </div>
+            <h1>Hà Phạm</h1>
+            <nav>
+                <a href="#" data-cil="o-mne">Về Tôi</a>
+                <a href="#" data-cil="dovednosti">Kỹ Năng</a>
+                <a href="#" data-cil="projekty">Dự Án</a>
+                <a href="#" data-cil="kontakt">Liên Hệ</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="o-mne" class="aktivni">
+                <h2>&gt; Về Tôi</h2>
+                <div class="profil-rozlozeni">
+                    <img src="fotka.jpg" alt="Hà Phạm" class="profil-fotka">
+                    <div class="profil-text">
+                        <p>Tôi là sinh viên năm hai tại Khoa Công nghệ Thông tin, Đại học Công nghệ Brno (FIT VUT).</p>
+                        <p>Tôi tập trung vào lập trình cấp thấp và môn học tôi yêu thích nhất là Hệ điều hành.</p>
+                        <p>Trong thời gian rảnh, tôi thích đọc sách, tập thể dục và dành thời gian cho bạn gái yêu dấu của tôi, Nela.</p>
+                        <p>Điểm trung bình học tập năm nhất của tôi là 1.57 (xếp hạng 59/646).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dovednosti">
+                <h2>&gt; Kỹ Năng</h2>
+                <div class="ikony-dovednosti">
+                    <i class="devicon-c-plain" title="C"></i>
+                    <i class="devicon-linux-plain" title="Linux"></i>
+                    <i class="devicon-bash-plain" title="Bash"></i>
+                    <i class="devicon-git-plain" title="Git"></i>
+                    <i class="devicon-github-original" title="GitHub"></i>
+                </div>
+            </section>
+
+            <section id="projekty">
+                <h2>&gt; Dự Án</h2>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark-olive);">&gt; Học kỳ 1</h3>
+                <div class="grid-projekty">
+                    <div class="projekt-karta">
+                        <h3>IZP: Xử lý văn bản</h3>
+                        <p>Hệ thống điều hướng – tìm kiếm địa chỉ và lọc các phím được phép trên bàn phím ảo.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/izp-projekt" target="_blank">Mã nguồn</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IZP: Phân tích cụm</h3>
+                        <p>Làm việc với cấu trúc dữ liệu và bộ nhớ động. Hợp nhất các cụm dữ liệu mạng gần nhất.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/izp-projekt2" target="_blank">Mã nguồn</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IEL: Giải mạch điện</h3>
+                        <p>Dự án cuối kỳ tập trung vào phân tích và giải các mạch điện.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/iel-projekt" target="_blank">Mã nguồn</a>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 40px; color: var(--color-dark-olive);">&gt; Học kỳ 2</h3>
+                <div class="grid-projekty">
+                    <div class="projekt-karta">
+                        <h3>IVS: Kiểm thử phần mềm</h3>
+                        <p>Kiến thức cơ bản về kiểm thử, sử dụng phương pháp blackbox, whitebox và Test-Driven Development (TDD).</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ivs-projekt-1" target="_blank">Mã nguồn</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IVS: Intercalculator</h3>
+                        <p>Phát triển phần mềm thực tế. Dự án nhóm tạo máy tính với giao diện đồ họa.</p>
+                        <a class="odkaz" href="https://github.com/SpookieGames/intercalculator" target="_blank">Mã nguồn</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>INC: Thiết kế UART</h3>
+                        <p>Thiết kế hệ thống kỹ thuật số. Tạo mô-đun nhận đầu vào nối tiếp và cung cấp đầu ra song song.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/inc-project" target="_blank">Mã nguồn</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IOS: Bash Scripting</h3>
+                        <p>Tạo script để phân tích nhật ký máy chủ web, lọc và tạo báo cáo thống kê.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ios-projekt-1" target="_blank">Mã nguồn</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IOS: Đồng bộ hóa</h3>
+                        <p>Triển khai bài toán đồng bộ hóa hệ thống.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ios_project_2" target="_blank">Mã nguồn</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontakt">
+                <h2>&gt; Liên Hệ</h2>
+                <ul class="seznam-bez-odrazek">
+                    <li>Email trường: <a class="odkaz" href="mailto:xphamha00@stud.fit.vut.cz">xphamha00@stud.fit.vut.cz</a></li>
+                    <li>Email cá nhân: <a class="odkaz" href="mailto:hapham282794@gmail.com">hapham282794@gmail.com</a></li>
+                    <li>GitHub: <a class="odkaz" href="https://github.com/honzakralem" target="_blank">github.com/honzakralem</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
