@@ -173,3 +173,11 @@ section.aktivni { display: block; }
     font-size: 0.9em;
     font-style: italic;
 }
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: var(--color-medium-olive);
+    margin-top: 20px;
+}
