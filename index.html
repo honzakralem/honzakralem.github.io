@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha Pham - Osobní stránka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+    <div class="layout">
+        <header>
+            <h1>Ha Pham</h1>
+            <nav>
+                <a href="#" data-cil="o-mne">O mně</a>
+                <a href="#" data-cil="dovednosti">Dovednosti</a>
+                <a href="#" data-cil="projekty">Projekty</a>
+                <a href="#" data-cil="kontakt">Kontakt</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="o-mne" class="aktivni">
+                <h2>&gt; O mně</h2>
+                <div class="profil-rozlozeni">
+                    <img src="fotka.jpg" alt="Ha Pham" class="profil-fotka">
+                    <div class="profil-text">
+                        <p>Jsem studentem druhého ročníku Fakulty informačních technologií VUT.</p>
+                        <p>Rád se zaměřuji na nízkoúrovňové programování a z předmětů mě nejvíce zaujalo téma operačních systémů</p>
+                        <p>Ve svém volném čase si rád čtu, cvičím a trávím čas se svoji milovanou přítelkyní Nelou.</p>
+                    </div>
+                </div>
+            </section>
+
+<section id="dovednosti">
+    <h2>&gt; Dovednosti</h2>
+    <div class="ikony-dovednosti">
+        <i class="devicon-c-plain" title="C"></i>
+        <i class="devicon-linux-plain" title="Linux"></i>
+        <i class="devicon-bash-plain" title="Bash"></i>
+        <i class="devicon-git-plain" title="Git"></i>
+        <i class="devicon-github-original" title="GitHub"></i>
+    </div>
+</section>
+
+            <section id="projekty">
+                <h2>&gt; Projekty</h2>
+                
+                <h3 style="margin-top: 20px; color: var(--color-dark-olive);">&gt; 1. semestr</h3>
+                <div class="grid-projekty">
+                    <div class="projekt-karta">
+                        <h3>IZP: Práce s textem</h3>
+                        <p>Navigační systém – vyhledávání adres a filtrace povolených kláves na virtuální klávesnici.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/izp-projekt" target="_blank">Zdrojový kód</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IZP: Shluková analýza</h3>
+                        <p>Práce s datovými strukturami a dynamickou pamětí. Slučování nejbližších shluků síťových toků.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/izp-projekt2" target="_blank">Zdrojový kód</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IEL: Řešení obvodů</h3>
+                        <p>Semestrální projekt zaměřený na analýzu a řešení elektrických obvodů.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/iel-projekt" target="_blank">Zdrojový kód</a>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 40px; color: var(--color-dark-olive);">&gt; 2. semestr</h3>
+                <div class="grid-projekty">
+                    <div class="projekt-karta">
+                        <h3>IVS: Testování softwaru</h3>
+                        <p>Základy testování, využití metod blackbox, whitebox a Test-Driven Development (TDD).</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ivs-projekt-1" target="_blank">Zdrojový kód</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IVS: Intercalculator</h3>
+                        <p>Praktické aspekty vývoje software. Týmový projekt tvorby kalkulačky s grafickým rozhraním.</p>
+                        <a class="odkaz" href="https://github.com/SpookieGames/intercalculator" target="_blank">Zdrojový kód</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>INC: Návrh UART</h3>
+                        <p>Návrh číslicových systémů. Vytvoření modulu, který přijme sériový vstup a poskytne paralelní výstup.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/inc-project" target="_blank">Zdrojový kód</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IOS: Bash skriptování</h3>
+                        <p>Tvorba skriptu pro analýzu záznamů webového serveru, jejich filtrování a generování statistik.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ios-projekt-1" target="_blank">Zdrojový kód</a>
+                    </div>
+                    <div class="projekt-karta">
+                        <h3>IOS: Synchronizace</h3>
+                        <p>Implementace synchronizačního problému.</p>
+                        <a class="odkaz" href="https://github.com/honzakralem/ios_project_2" target="_blank">Zdrojový kód</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontakt">
+                <h2>&gt; Kontakt</h2>
+                <ul class="seznam-bez-odrazek">
+                    <li>Školní email: <a class="odkaz" href="mailto:xphamha00@stud.fit.vut.cz">xphamha00@stud.fit.vut.cz</a></li>
+                    <li>Osobní email: <a class="odkaz" href="mailto:hapham282794@gmail.com">hapham282794@gmail.com</a></li>
+                    <li>GitHub: <a class="odkaz" href="https://github.com/honzakralem" target="_blank">github.com/honzakralem</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

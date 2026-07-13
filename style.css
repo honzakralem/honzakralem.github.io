@@ -1,0 +1,147 @@
+:root {
+    --color-dark-olive: #3D4127;
+    --color-medium-olive: #636B2F;
+    --color-light-gray-green: #BAC095;
+    --color-light-green-yellow: #D4DE95;
+}
+
+body { 
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--color-light-gray-green);
+    color: var(--color-dark-olive);
+}
+
+.layout {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+header { 
+    border-bottom: 3px solid var(--color-dark-olive);
+    padding-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+h1 { font-size: 3em; text-transform: uppercase; }
+h2 { font-size: 1.8em; text-transform: uppercase; margin-bottom: 20px; }
+h3 { font-size: 1.3em; margin-bottom: 10px; color: var(--color-medium-olive); }
+
+header p { font-size: 1.2em; margin: 5px 0 20px 0; font-weight: bold; }
+
+nav { display: flex; gap: 20px; }
+
+nav a {
+    color: var(--color-dark-olive);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover { border-bottom: 2px solid var(--color-dark-olive); }
+
+section { 
+    display: none; 
+    animation: fadeIn 0.3s ease-in;
+}
+
+section.aktivni { display: block; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profil-rozlozeni {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.profil-fotka {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 3px solid var(--color-dark-olive);
+    filter: grayscale(20%);
+}
+
+.seznam-dovednosti { 
+    list-style-type: square; 
+    padding-left: 20px; 
+    font-size: 1.1em;
+}
+.seznam-dovednosti li { margin-bottom: 10px; }
+
+.seznam-bez-odrazek {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+.seznam-bez-odrazek li { margin-bottom: 10px; }
+
+/* Styly pro sekci Projekty */
+.grid-projekty {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projekt-karta {
+    border: 2px solid var(--color-medium-olive);
+    padding: 20px;
+    background-color: var(--color-light-green-yellow);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.projekt-karta:hover {
+    transform: translateY(-3px);
+    background-color: #e0e8aa; /* Mírné zesvětlení při najetí */
+}
+
+.projekt-karta p { margin-top: 0; font-size: 0.95em; }
+
+.odkaz { 
+    color: var(--color-medium-olive); 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-bottom: 1px solid var(--color-medium-olive);
+}
+
+.odkaz:hover { 
+    color: var(--color-dark-olive); 
+    border-bottom-color: var(--color-dark-olive);
+}
+
+.ikony-dovednosti {
+    display: flex;
+    gap: 30px;
+    font-size: 3.5em; /* Velikost ikon */
+    color: var(--color-dark-olive);
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.ikony-dovednosti i {
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: default;
+}
+
+.ikony-dovednosti i:hover {
+    transform: translateY(-5px);
+    color: var(--color-medium-olive);
+}
