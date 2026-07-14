@@ -181,3 +181,24 @@ footer {
     color: var(--color-medium-olive);
     margin-top: 20px;
 }
+
+.changelog-container {
+    max-height: 150px; /* Uprav podle potřeby */
+    overflow-y: auto;
+    border: 2px solid var(--color-medium-olive);
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid var(--color-medium-olive);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+}
